@@ -6,9 +6,11 @@ export default function Navbar () {
 
 <nav>
     <div className='nav-container'>
-    <Link to="/home">home</Link>
+    <Link to="/">home</Link>
     &nbsp; | &nbsp;
-    
+    <Link to="/availabilities">vacancies</Link>
+    &nbsp; | &nbsp;
+    <Link to="/cart">🛒</Link>
     </div>
 
 </nav>   

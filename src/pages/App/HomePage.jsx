@@ -1,4 +1,6 @@
 export default function HomePage () {
+
+    
     return (
     <h1>Homepage
         initial page that users encounter when they visit a website 
