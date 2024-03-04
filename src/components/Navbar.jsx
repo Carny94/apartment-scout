@@ -10,6 +10,8 @@ export default function Navbar () {
     &nbsp; | &nbsp;
     <Link to="/availabilities">vacancies</Link>
     &nbsp; | &nbsp;
+    <Link to="/dashboard">dashboard</Link>
+    &nbsp; | &nbsp;
     <Link to="/cart">🛒</Link>
     </div>
 
