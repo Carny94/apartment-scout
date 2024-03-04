@@ -10,16 +10,15 @@ import QuestionModal from '../../components/QuestionsModal';
 import Cart from '../../components/Cart';
 
 function App() {
-  const [ user, setUser ] = useState({})
+  const [ user, setUser ] = useState(null)
 
   return (
     <main className="App">
    {/* IMPORTANT: all paths lowercas */}
 
-   
+   <Navbar />
         { user ?
         <>
-           <Navbar />
         <Routes>
            <Route path="/" element={<HomePage />} />
            <Route path="/dashboard" element={<Dashboard />} />

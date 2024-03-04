@@ -14,7 +14,6 @@ export default function Navbar () {
     &nbsp; | &nbsp;
     <Link to="/cart">🛒</Link>
     </div>
-
 </nav>   
  )
 }

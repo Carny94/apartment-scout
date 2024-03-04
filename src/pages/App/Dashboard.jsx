@@ -1,15 +1,14 @@
+import AuthorizationModal from "../../components/AuthorizationModal"
 
 export default function Dashboard () {
 
 
     return (
     
-    <h1>Dashboard
-        <p>
-            Dashboard page will display the login/signup modal
-        </p>
-    </h1>
-    
+   <main>
+    <h1> Dashboard page will display signup form from Authorization modal</h1>
+    <AuthorizationModal />
+   </main>
 
     )
 
