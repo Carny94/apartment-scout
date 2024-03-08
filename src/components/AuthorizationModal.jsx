@@ -15,20 +15,19 @@ export default class AuthorizationModal extends React.Component {
           [e.target.name]: e.target.value,
           error: ''
         });
-    handleSubmit = (e) => {
+    }
+    handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const formData = {
-            name,
-            email,
-            password
-         }
+            const {name, email, password} = this.state
+            const formData = {name,email,password};
             const user = await signUp(formData);
+            console.log(user);
         }catch {
             this.setState({ error: " sign up failed - try again "})
         }
     }
-      };
+      
 
   render() {
     const disable = this.state.password !== this.state.confirm;
