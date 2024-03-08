@@ -5,6 +5,7 @@ const express = require('express');
 
  require('dotenv').config();
  require('./config/database');
+ app.use('/api/users', require('./routes/api/users'));
 
  const app = express();
 	
@@ -20,6 +21,9 @@ const express = require('express');
 
  
  const port = process.env.PORT || 3001;
+
+ app.use('/api/users', require('./routes/api/users'));
+
 
  app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
